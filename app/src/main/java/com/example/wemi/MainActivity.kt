@@ -3,7 +3,9 @@ package com.example.wemi
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.wemi.community.EditCommunityActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,6 +15,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val nav_bar = findViewById<BottomNavigationView>(R.id.nav_bar)
+
+        addContent.setOnClickListener {
+            myStartActivity(EditCommunityActivity::class.java)
+        }
 
         // BottomNavigation 기능 구현
         nav_bar.run {
