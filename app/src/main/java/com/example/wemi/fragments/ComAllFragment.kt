@@ -21,16 +21,16 @@ class ComAllFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val items = mutableListOf<CommunityModel>()
-
-        items.add(CommunityModel("카테고리", "닉네임", "시간","제목","내용","댓글"))
-
-        val adapter = CommunityAllAdapter(items)
-        communityListView.adapter = adapter
-
-        communityListView.setOnItemClickListener { parent : AdapterView<*>, view : View, position : Int, id : Long ->
-            // 커뮤 안으로 들어가기
-        }
+//        val items = mutableListOf<CommunityModel>()
+//
+//        items.add(CommunityModel("카테고리", "닉네임", "시간","제목","내용","댓글"))
+//
+//        val adapter = CommunityAllAdapter(items)
+//        communityListView.adapter = adapter
+//
+//        communityListView.setOnItemClickListener { parent : AdapterView<*>, view : View, position : Int, id : Long ->
+//            // 커뮤 안으로 들어가기
+//        }
     }
 
     override fun onCreateView(

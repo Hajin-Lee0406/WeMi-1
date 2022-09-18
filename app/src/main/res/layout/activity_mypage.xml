@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -92,13 +93,15 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp">
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/applyList"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="20dp">-->
 
-                </androidx.recyclerview.widget.RecyclerView>
+<!--                </androidx.recyclerview.widget.RecyclerView>-->
 
+                <!--just-->
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -113,22 +116,79 @@
                         android:orientation="horizontal">
 
 
-                        <Button
+                        <LinearLayout
+                            android:background="@drawable/background_radius_white"
                             android:id="@+id/supportList"
                             android:layout_width="150dp"
                             android:layout_height="100dp"
-                            android:layout_marginRight="15dp" />
+                            android:layout_marginRight="15dp"
+                            android:orientation="vertical" >
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="17sp"
+                                android:text="서울형 긴급복지"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="서울시"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
 
-                        <Button
+                        <LinearLayout
+                            android:background="@drawable/background_radius_white"
                             android:id="@+id/supportList2"
                             android:layout_width="150dp"
                             android:layout_height="100dp"
-                            android:layout_marginRight="15dp" />
+                            android:layout_marginRight="15dp"
+                            android:orientation="vertical" >
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="17sp"
+                                android:text="청소년 미혼모 경제적 자립 지원"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="여성인권 동감"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
 
-                        <Button
+                        <LinearLayout
+                            android:background="@drawable/background_radius_white"
+                            android:id="@+id/supportList3"
                             android:layout_width="150dp"
                             android:layout_height="100dp"
-                            android:layout_marginRight="15dp" />
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="17sp"
+                                android:text="캥거루 의료비 지원"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="KT&amp;G 복지재단"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="12sp"/>
+
+                        </LinearLayout>
                     </LinearLayout>
                 </HorizontalScrollView>
 
@@ -272,4 +332,5 @@
         app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/navi_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
 
